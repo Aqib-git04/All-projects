@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #fff;
+
+}
+
+.main-heading {
+    text-align: center;
+    margin: 36px;
+    border-bottom: 4px solid;
+    border-bottom-color: #421f7b;
+    border-radius: 22px;
+}
+
+h1
+ {
+
+    padding: 7px;
+}
+
+a
+{
+    color: #fff;
+    
+}
+
+ul
+{
+    padding: 20px;
+}
+
+img {
+    width: 45px;
+    border-radius: 5px;
+}
+
+.git-logo {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+    margin-bottom: 18px;
+    margin-right: 25px;
+}
