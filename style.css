@@ -1,50 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: black;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #f9f9f9; /* Light text for contrast */
+    padding: 20px;
+    line-height: 1.6;
+}
 
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .main-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff; /* White text for better visibility */
+}
+
+.projects-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
     text-align: center;
-    margin: 36px;
-    border-bottom: 4px solid;
-    border-bottom-color: #421f7b;
-    border-radius: 22px;
+    font-size: 2rem;
+    color: #fff; /* White section title */
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-h1
- {
-
-    padding: 7px;
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
-a
-{
-    color: #fff;
-    
-}
-
-ul
-{
+.project-list li {
+    background-color: #111; /* Dark background for project cards */
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-img {
-    width: 45px;
-    border-radius: 5px;
+.project-list li:hover {
+    transform: translateY(-5px);
+    background-color: #1a1a1a; /* Slightly lighter on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
 }
 
-.git-logo {
+.project-list li a {
+    text-decoration: none;
+    color: #4a90e2; /* Blue text for links */
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-links {
     display: flex;
-    gap: 12px;
-    justify-content: end;
-    margin-bottom: 18px;
-    margin-right: 25px;
+    justify-content: center;
+    gap: 20px;
 }
+
+.social-links a img {
+    width: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover img {
+    opacity: 0.8;
+}
+ #icons{
+    font-size: 25px;
+ }
